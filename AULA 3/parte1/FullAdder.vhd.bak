@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+ 
+
+entity FullAdder is
+	port(a,b,cin : in std_logic_vector(0 downto 0);
+			s, cout :out std_logic);
+end FullAdder;
+
+architecture Behavioral  of FullAdder is
+signal s_a,s_b,s_s,s_cin : unsigned(1 downto 0);
+begin
+	s_a <= '0' & unsigned(a);
+	s_b <= '0' & unsigned(b);
+	s_cin <= '0' & unsigned(cin);
+	s_s <= s_a + s_b + s_cin;
+	cout <= std_logic(s_s(1));
+	s <= std_logic(s_s(0));
+end Behavioral;

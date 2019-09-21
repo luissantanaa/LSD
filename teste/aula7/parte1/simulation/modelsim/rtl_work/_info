@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/simulation/modelsim
+Edec2_4en
+Z1 w1493462500
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En.vhd
+Z6 FC:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En.vhd
+l0
+L5
+V;ZE_zUPSD0eh8G^541Q`d1
+!s100 =MlQ0c`>Ud3FlLzV:JGmU0
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1493463462
+!i10b 1
+Z9 !s108 1493463462.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En.vhd|
+Z11 !s107 C:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 8 dec2_4en 0 22 ;ZE_zUPSD0eh8G^541Q`d1
+l12
+L11
+V6O1n?m0Xd`f<Q732cAamU3
+!s100 U95d]^Hz880?[m0D2kAWO2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edec2_4en_tb
+Z15 w1493462304
+R3
+R4
+R0
+Z16 8C:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En_Tb.vhd
+Z17 FC:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En_Tb.vhd
+l0
+L4
+V:fY6dMSQ5W3]RZ?nz_d5G0
+!s100 EGUfSIK5TJKnYz=C^oXk`0
+R7
+32
+Z18 !s110 1493463519
+!i10b 1
+Z19 !s108 1493463519.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En_Tb.vhd|
+Z21 !s107 C:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/teste/aula7/parte1/Dec2_4En_Tb.vhd|
+!i113 1
+Z22 o-work work
+R13
+Astimulus
+R2
+R14
+R3
+R4
+Z23 DEx4 work 11 dec2_4en_tb 0 22 :fY6dMSQ5W3]RZ?nz_d5G0
+l15
+L7
+Z24 VbO0K?cT^FG>MRjYP<o=m<2
+Z25 !s100 4_J?3IaDabL1L66]OBDR02
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R22
+R13

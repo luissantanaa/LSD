@@ -1,0 +1,84 @@
+|AccN
+A[0] => addern:add.op1[0]
+A[1] => addern:add.op1[1]
+A[2] => addern:add.op1[2]
+A[3] => addern:add.op1[3]
+A[4] => addern:add.op1[4]
+A[5] => addern:add.op1[5]
+A[6] => addern:add.op1[6]
+A[7] => addern:add.op1[7]
+reset => regn:Reg.reset
+clk => regn:Reg.clk
+en => regn:Reg.en
+
+
+|AccN|AdderN:add
+op1[0] => Add0.IN8
+op1[1] => Add0.IN7
+op1[2] => Add0.IN6
+op1[3] => Add0.IN5
+op1[4] => Add0.IN4
+op1[5] => Add0.IN3
+op1[6] => Add0.IN2
+op1[7] => Add0.IN1
+op2[0] => Add0.IN16
+op2[1] => Add0.IN15
+op2[2] => Add0.IN14
+op2[3] => Add0.IN13
+op2[4] => Add0.IN12
+op2[5] => Add0.IN11
+op2[6] => Add0.IN10
+op2[7] => Add0.IN9
+outOp[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+outOp[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AccN|RegN:Reg
+datain[0] => dataout.DATAB
+datain[1] => dataout.DATAB
+datain[2] => dataout.DATAB
+datain[3] => dataout.DATAB
+datain[4] => dataout.DATAB
+datain[5] => dataout.DATAB
+datain[6] => dataout.DATAB
+datain[7] => dataout.DATAB
+dataout[0] <= dataout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= dataout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= dataout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[3] <= dataout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[4] <= dataout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[5] <= dataout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[6] <= dataout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[7] <= dataout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+en => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+clk => dataout[0]~reg0.CLK
+clk => dataout[1]~reg0.CLK
+clk => dataout[2]~reg0.CLK
+clk => dataout[3]~reg0.CLK
+clk => dataout[4]~reg0.CLK
+clk => dataout[5]~reg0.CLK
+clk => dataout[6]~reg0.CLK
+clk => dataout[7]~reg0.CLK
+
+

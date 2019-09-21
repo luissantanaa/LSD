@@ -1,0 +1,15 @@
+library ieee;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity Bin2Dec is
+	port(input : in std_logic_vector(3 downto 0);
+			outDez : out std_logic_vector(3 downto 0);
+			outUn : out std_logic_vector(3 downto 0));
+end Bin2Dec;
+
+architecture Behavioral of Bin2Dec is
+begin	
+	outDez <= input / x"A";
+	outUn <= input rem x"A";
+end Behavioral;

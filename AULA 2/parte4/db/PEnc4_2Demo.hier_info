@@ -1,0 +1,25 @@
+|PEnc4_2Demo
+LEDG[0] <= PEnc4_2:inst.validOut
+SW[0] => PEnc4_2:inst.input[0]
+SW[1] => PEnc4_2:inst.input[1]
+SW[2] => PEnc4_2:inst.input[2]
+SW[3] => PEnc4_2:inst.input[3]
+LEDR[0] <= PEnc4_2:inst.output[0]
+LEDR[1] <= PEnc4_2:inst.output[1]
+
+
+|PEnc4_2Demo|PEnc4_2:inst
+input[0] => validOut.DATAA
+input[1] => output.DATAA
+input[1] => validOut.OUTPUTSELECT
+input[2] => output.OUTPUTSELECT
+input[2] => output.DATAA
+input[2] => validOut.OUTPUTSELECT
+input[3] => output.OUTPUTSELECT
+input[3] => output.OUTPUTSELECT
+input[3] => validOut.OUTPUTSELECT
+validOut <= validOut.DB_MAX_OUTPUT_PORT_TYPE
+output[0] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+

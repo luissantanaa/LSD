@@ -1,0 +1,42 @@
+|ShiftRegisterDemo
+clock_50 => clkdividern:freq.clkIn
+SW[0] => shiftregistern:shift.sin
+LEDR[0] <= shiftregistern:shift.dataOut[0]
+LEDR[1] <= shiftregistern:shift.dataOut[1]
+LEDR[2] <= shiftregistern:shift.dataOut[2]
+LEDR[3] <= shiftregistern:shift.dataOut[3]
+LEDR[4] <= shiftregistern:shift.dataOut[4]
+LEDR[5] <= shiftregistern:shift.dataOut[5]
+LEDR[6] <= shiftregistern:shift.dataOut[6]
+LEDR[7] <= shiftregistern:shift.dataOut[7]
+
+
+|ShiftRegisterDemo|ClkDividerN:freq
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => clkOut~reg0.CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftRegisterDemo|ShiftRegistern:shift
+sin => shiftreg[0].DATAIN
+clk => shiftreg[0].CLK
+clk => shiftreg[1].CLK
+clk => shiftreg[2].CLK
+clk => shiftreg[3].CLK
+clk => shiftreg[4].CLK
+clk => shiftreg[5].CLK
+clk => shiftreg[6].CLK
+clk => shiftreg[7].CLK
+dataOut[0] <= shiftreg[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= shiftreg[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= shiftreg[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= shiftreg[3].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= shiftreg[4].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= shiftreg[5].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= shiftreg[6].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= shiftreg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

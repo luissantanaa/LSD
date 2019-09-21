@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/AULA 1/Parte2/simulation/qsim
+vAND2Gate
+!s110 1487092809
+!i10b 1
+!s100 XgZ;mhdDNn3im?9]<@]RI3
+Im=XA6?PzjO_=akDSJA<kM2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1487092808
+8VHDLDemo.vo
+FVHDLDemo.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1487092809.000000
+!s107 VHDLDemo.vo|
+!s90 -work|work|VHDLDemo.vo|
+!i113 1
+Z3 o-work work
+n@a@n@d2@gate
+vAND2Gate_vlg_vec_tst
+!s110 1487092810
+!i10b 1
+!s100 30aS5[i<3h?dQjoLBL8jH2
+Iin=GoZ_]EnKSQg8O1Ujg72
+R1
+R0
+w1487092802
+8AND2Gate.vwf.vt
+FAND2Gate.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1487092810.000000
+!s107 AND2Gate.vwf.vt|
+!s90 -work|work|AND2Gate.vwf.vt|
+!i113 1
+R3
+n@a@n@d2@gate_vlg_vec_tst

@@ -1,0 +1,12 @@
+|PEnc_42
+decodedIn[0] => ~NO_FANOUT~
+decodedIn[1] => encodedOut.DATAA
+decodedIn[2] => encodedOut.OUTPUTSELECT
+decodedIn[2] => encodedOut.DATAA
+decodedIn[3] => encodedOut.OUTPUTSELECT
+decodedIn[3] => encodedOut.OUTPUTSELECT
+encodedOut[0] <= encodedOut.DB_MAX_OUTPUT_PORT_TYPE
+encodedOut[1] <= encodedOut.DB_MAX_OUTPUT_PORT_TYPE
+validOut <= <VCC>
+
+

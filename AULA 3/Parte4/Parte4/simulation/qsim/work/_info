@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ASUS_/Documents/Curso _ECT/2ano/LSD/Pratica/guiao3/Parte4/simulation/qsim
+vBin2BCD
+Z1 !s110 1488471985
+!i10b 1
+!s100 4]G0heae_WTaO3`W:Pe<;3
+IUK@RW>:UW1hd<iKSZIVj62
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488471984
+8ALUDemo.vo
+FALUDemo.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1488471985.000000
+!s107 ALUDemo.vo|
+!s90 -work|work|ALUDemo.vo|
+!i113 1
+Z5 o-work work
+n@bin2@b@c@d
+vBin2BCD_vlg_vec_tst
+R1
+!i10b 1
+!s100 27koXFKGQc_MjebLWWLj^1
+IlNg5LS1LRCH[WkfGo8Eil1
+R2
+R0
+w1488471980
+8toBCD.vwf.vt
+FtoBCD.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 toBCD.vwf.vt|
+!s90 -work|work|toBCD.vwf.vt|
+!i113 1
+R5
+n@bin2@b@c@d_vlg_vec_tst

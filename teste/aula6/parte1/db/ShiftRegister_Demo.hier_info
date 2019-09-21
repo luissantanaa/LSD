@@ -1,0 +1,20 @@
+|ShiftRegisterLoad4
+sin => shift.DATAB
+clk => shift[0].CLK
+clk => shift[1].CLK
+clk => shift[2].CLK
+clk => shift[3].CLK
+loadIn[0] => shift.DATAA
+loadIn[1] => shift[1].DATAIN
+loadIn[2] => shift[2].DATAIN
+loadIn[3] => shift[3].DATAIN
+load => shift.OUTPUTSELECT
+load => shift[1].ENA
+load => shift[2].ENA
+load => shift[3].ENA
+dataout[0] <= shift[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= shift[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= shift[2].DB_MAX_OUTPUT_PORT_TYPE
+dataout[3] <= shift[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

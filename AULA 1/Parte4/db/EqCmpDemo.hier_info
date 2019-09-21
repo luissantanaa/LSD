@@ -1,0 +1,24 @@
+|EqCmpDemo
+LEDG[0] <= EqCmp4:inst.CmpOut
+SW[0] => EqCmp4:inst.input0
+SW[1] => EqCmp4:inst.input1
+SW[2] => EqCmp4:inst.input2
+SW[3] => EqCmp4:inst.input3
+SW[4] => EqCmp4:inst.input10
+SW[5] => EqCmp4:inst.input11
+SW[6] => EqCmp4:inst.input12
+SW[7] => EqCmp4:inst.input13
+
+
+|EqCmpDemo|EqCmp4:inst
+CmpOut <= <GND>
+input0 => ~NO_FANOUT~
+input3 => ~NO_FANOUT~
+input2 => ~NO_FANOUT~
+input1 => ~NO_FANOUT~
+input10 => ~NO_FANOUT~
+input11 => ~NO_FANOUT~
+input12 => ~NO_FANOUT~
+input13 => ~NO_FANOUT~
+
+

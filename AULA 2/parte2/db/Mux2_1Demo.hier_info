@@ -1,0 +1,9 @@
+|Mux2_1Demo
+enable => ~NO_FANOUT~
+inputs[0] => output~reg0.DATAIN
+inputs[1] => output~reg0.ADATA
+output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sel => output~reg0.ALOAD
+sel => output~reg0.CLK
+
+

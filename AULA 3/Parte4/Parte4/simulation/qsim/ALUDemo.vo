@@ -1,0 +1,411 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition"
+
+// DATE "03/02/2017 16:26:24"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Bin2BCD (
+	binIn,
+	bcd0,
+	bcd1);
+input 	[3:0] binIn;
+output 	[3:0] bcd0;
+output 	[3:0] bcd1;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \bcd0[0]~output_o ;
+wire \bcd0[1]~output_o ;
+wire \bcd0[2]~output_o ;
+wire \bcd0[3]~output_o ;
+wire \bcd1[0]~output_o ;
+wire \bcd1[1]~output_o ;
+wire \bcd1[2]~output_o ;
+wire \bcd1[3]~output_o ;
+wire \binIn[0]~input_o ;
+wire \binIn[1]~input_o ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout ;
+wire \binIn[3]~input_o ;
+wire \binIn[2]~input_o ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ;
+wire \Mod0|auto_generated|divider|divider|StageOut[13]~0_combout ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout ;
+wire \Mod0|auto_generated|divider|divider|StageOut[14]~1_combout ;
+wire \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout ;
+wire \Mod0|auto_generated|divider|divider|StageOut[15]~2_combout ;
+wire \Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1_cout ;
+wire \Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3_cout ;
+wire \Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5_cout ;
+wire \Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ;
+
+
+cycloneive_io_obuf \bcd0[0]~output (
+	.i(\binIn[0]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd0[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd0[0]~output .bus_hold = "false";
+defparam \bcd0[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd0[1]~output (
+	.i(\Mod0|auto_generated|divider|divider|StageOut[13]~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd0[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd0[1]~output .bus_hold = "false";
+defparam \bcd0[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd0[2]~output (
+	.i(\Mod0|auto_generated|divider|divider|StageOut[14]~1_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd0[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd0[2]~output .bus_hold = "false";
+defparam \bcd0[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd0[3]~output (
+	.i(\Mod0|auto_generated|divider|divider|StageOut[15]~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd0[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd0[3]~output .bus_hold = "false";
+defparam \bcd0[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd1[0]~output (
+	.i(!\Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd1[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd1[0]~output .bus_hold = "false";
+defparam \bcd1[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd1[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd1[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd1[1]~output .bus_hold = "false";
+defparam \bcd1[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd1[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd1[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd1[2]~output .bus_hold = "false";
+defparam \bcd1[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \bcd1[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bcd1[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bcd1[3]~output .bus_hold = "false";
+defparam \bcd1[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \binIn[0]~input (
+	.i(binIn[0]),
+	.ibar(gnd),
+	.o(\binIn[0]~input_o ));
+// synopsys translate_off
+defparam \binIn[0]~input .bus_hold = "false";
+defparam \binIn[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \binIn[1]~input (
+	.i(binIn[1]),
+	.ibar(gnd),
+	.o(\binIn[1]~input_o ));
+// synopsys translate_off
+defparam \binIn[1]~input .bus_hold = "false";
+defparam \binIn[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout  = \binIn[1]~input_o  $ (VCC)
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1  = CARRY(\binIn[1]~input_o )
+
+	.dataa(\binIn[1]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout ),
+	.cout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 ));
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0 .lut_mask = 16'h55AA;
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \binIn[3]~input (
+	.i(binIn[3]),
+	.ibar(gnd),
+	.o(\binIn[3]~input_o ));
+// synopsys translate_off
+defparam \binIn[3]~input .bus_hold = "false";
+defparam \binIn[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \binIn[2]~input (
+	.i(binIn[2]),
+	.ibar(gnd),
+	.o(\binIn[2]~input_o ));
+// synopsys translate_off
+defparam \binIn[2]~input .bus_hold = "false";
+defparam \binIn[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout  = (\binIn[2]~input_o  & (\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1  & VCC)) # (!\binIn[2]~input_o  & 
+// (!\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 ))
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3  = CARRY((!\binIn[2]~input_o  & !\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 ))
+
+	.dataa(\binIn[2]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 ),
+	.combout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout ),
+	.cout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 ));
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2 .lut_mask = 16'hA505;
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout  = (\binIn[3]~input_o  & (\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3  $ (GND))) # (!\binIn[3]~input_o  & 
+// (!\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3  & VCC))
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~5  = CARRY((\binIn[3]~input_o  & !\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 ))
+
+	.dataa(\binIn[3]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 ),
+	.combout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout ),
+	.cout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 ));
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4 .lut_mask = 16'hA50A;
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  = !\Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 ),
+	.combout(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6 .lut_mask = 16'h0F0F;
+defparam \Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|StageOut[13]~0 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|StageOut[13]~0_combout  = (\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  & (\binIn[1]~input_o )) # (!\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  & 
+// ((\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout )))
+
+	.dataa(\binIn[1]~input_o ),
+	.datab(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout ),
+	.datac(gnd),
+	.datad(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ),
+	.cin(gnd),
+	.combout(\Mod0|auto_generated|divider|divider|StageOut[13]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|StageOut[13]~0 .lut_mask = 16'hAACC;
+defparam \Mod0|auto_generated|divider|divider|StageOut[13]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|StageOut[14]~1 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|StageOut[14]~1_combout  = (\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  & (\binIn[2]~input_o )) # (!\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  & 
+// ((\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout )))
+
+	.dataa(\binIn[2]~input_o ),
+	.datab(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout ),
+	.datac(gnd),
+	.datad(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ),
+	.cin(gnd),
+	.combout(\Mod0|auto_generated|divider|divider|StageOut[14]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|StageOut[14]~1 .lut_mask = 16'hAACC;
+defparam \Mod0|auto_generated|divider|divider|StageOut[14]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Mod0|auto_generated|divider|divider|StageOut[15]~2 (
+// Equation(s):
+// \Mod0|auto_generated|divider|divider|StageOut[15]~2_combout  = (\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  & (\binIn[3]~input_o )) # (!\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  & 
+// ((\Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout )))
+
+	.dataa(\binIn[3]~input_o ),
+	.datab(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout ),
+	.datac(gnd),
+	.datad(\Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ),
+	.cin(gnd),
+	.combout(\Mod0|auto_generated|divider|divider|StageOut[15]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mod0|auto_generated|divider|divider|StageOut[15]~2 .lut_mask = 16'hAACC;
+defparam \Mod0|auto_generated|divider|divider|StageOut[15]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 (
+// Equation(s):
+// \Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1_cout  = CARRY(\binIn[1]~input_o )
+
+	.dataa(\binIn[1]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(),
+	.cout(\Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1_cout ));
+// synopsys translate_off
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 .lut_mask = 16'h00AA;
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 (
+// Equation(s):
+// \Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3_cout  = CARRY((!\binIn[2]~input_o  & !\Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1_cout ))
+
+	.dataa(\binIn[2]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1_cout ),
+	.combout(),
+	.cout(\Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3_cout ));
+// synopsys translate_off
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 .lut_mask = 16'h0005;
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 (
+// Equation(s):
+// \Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5_cout  = CARRY((\binIn[3]~input_o  & !\Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3_cout ))
+
+	.dataa(\binIn[3]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3_cout ),
+	.combout(),
+	.cout(\Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5_cout ));
+// synopsys translate_off
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 .lut_mask = 16'h000A;
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6 (
+// Equation(s):
+// \Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout  = !\Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5_cout 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5_cout ),
+	.combout(\Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6 .lut_mask = 16'h0F0F;
+defparam \Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+assign bcd0[0] = \bcd0[0]~output_o ;
+
+assign bcd0[1] = \bcd0[1]~output_o ;
+
+assign bcd0[2] = \bcd0[2]~output_o ;
+
+assign bcd0[3] = \bcd0[3]~output_o ;
+
+assign bcd1[0] = \bcd1[0]~output_o ;
+
+assign bcd1[1] = \bcd1[1]~output_o ;
+
+assign bcd1[2] = \bcd1[2]~output_o ;
+
+assign bcd1[3] = \bcd1[3]~output_o ;
+
+endmodule

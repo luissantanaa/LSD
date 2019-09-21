@@ -1,0 +1,13 @@
+#! /bin/bash
+#
+# LSD.TOS, March 2017 (DO NOT REMOVE THIS LINE)
+#
+# Extract the entity declarations from one or more VHDL files.
+#
+
+while (( $# > 0 )); do
+  if [ -e $1 ]; then
+    gawk 'BEGIN {i=0} /^entity .* is$/ {i=1} /^end .*;$/ {i=0} { if(i) print }' $1
+  fi
+  shift
+done

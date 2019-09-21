@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/xXxpussylordswagxXx/Documents/merdas da uni/LSD/mini projeto/parte2/simulation/qsim
+vparking_Phase2
+Z1 !s110 1490464832
+!i10b 1
+!s100 d]3j^iFea_j0?`=CR0:b41
+IBj]Z7@5nE;nz`f6KgNcge0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1490464826
+8parking_phase2.vo
+Fparking_phase2.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1490464832.000000
+!s107 parking_phase2.vo|
+!s90 -work|work|parking_phase2.vo|
+!i113 1
+Z5 o-work work
+nparking_@phase2
+vparking_Phase2_vlg_vec_tst
+R1
+!i10b 1
+!s100 a?Uo]YoAcmnYn7W3Y;>3c0
+Id596?D8;6hPXjl^<BT5kc0
+R2
+R0
+w1490464820
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+nparking_@phase2_vlg_vec_tst

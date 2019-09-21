@@ -1,0 +1,35 @@
+# do parking_phase2.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 18:00:32 on Mar 25,2017
+# vlog -work work parking_phase2.vo 
+# -- Compiling module parking_Phase2
+# 
+# Top level modules:
+# 	parking_Phase2
+# End time: 18:00:32 on Mar 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 18:00:32 on Mar 25,2017
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module parking_Phase2_vlg_vec_tst
+# 
+# Top level modules:
+# 	parking_Phase2_vlg_vec_tst
+# End time: 18:00:32 on Mar 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.parking_Phase2_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 18:00:33 on Mar 25,2017
+# Loading work.parking_Phase2_vlg_vec_tst
+# Loading work.parking_Phase2
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Note: $finish    : Waveform.vwf.vt(49)
+#    Time: 1 us  Iteration: 0  Instance: /parking_Phase2_vlg_vec_tst
+# End time: 18:00:34 on Mar 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

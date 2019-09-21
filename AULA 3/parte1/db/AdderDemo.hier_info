@@ -1,0 +1,118 @@
+|CenasDemo
+LEDR[0] <= Adder4:inst.s[0]
+LEDR[1] <= Adder4:inst.s[1]
+LEDR[2] <= Adder4:inst.s[2]
+LEDR[3] <= Adder4:inst.s[3]
+LEDR[4] <= Adder4:inst.cout
+SW[0] => Adder4:inst.a[0]
+SW[1] => Adder4:inst.a[1]
+SW[2] => Adder4:inst.a[2]
+SW[3] => Adder4:inst.a[3]
+SW[4] => MuxComp:inst1.input0[0]
+SW[5] => MuxComp:inst1.input0[1]
+SW[6] => MuxComp:inst1.input0[2]
+SW[7] => MuxComp:inst1.input0[3]
+SW[8] => MuxComp:inst1.sub
+SW[9] => Adder4:inst.cin
+
+
+|CenasDemo|Adder4:inst
+a[0] => fulladder:bit0.a
+a[1] => fulladder:bit1.a
+a[2] => fulladder:bit2.a
+a[3] => fulladder:bit3.a
+b[0] => fulladder:bit0.b
+b[1] => fulladder:bit1.b
+b[2] => fulladder:bit2.b
+b[3] => fulladder:bit3.b
+cin => fulladder:bit0.cin
+cin => fulladder:bit1.cin
+cin => fulladder:bit2.cin
+cin => fulladder:bit3.cin
+s[0] <= fulladder:bit0.s
+s[1] <= fulladder:bit1.s
+s[2] <= fulladder:bit2.s
+s[3] <= fulladder:bit3.s
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CenasDemo|Adder4:inst|FullAdder:bit0
+a => s.IN0
+a => S1.IN0
+a => S2.IN0
+b => s.IN1
+b => S1.IN1
+b => S3.IN0
+cin => s.IN1
+cin => S2.IN1
+cin => S3.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CenasDemo|Adder4:inst|FullAdder:bit1
+a => s.IN0
+a => S1.IN0
+a => S2.IN0
+b => s.IN1
+b => S1.IN1
+b => S3.IN0
+cin => s.IN1
+cin => S2.IN1
+cin => S3.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CenasDemo|Adder4:inst|FullAdder:bit2
+a => s.IN0
+a => S1.IN0
+a => S2.IN0
+b => s.IN1
+b => S1.IN1
+b => S3.IN0
+cin => s.IN1
+cin => S2.IN1
+cin => S3.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CenasDemo|Adder4:inst|FullAdder:bit3
+a => s.IN0
+a => S1.IN0
+a => S2.IN0
+b => s.IN1
+b => S1.IN1
+b => S3.IN0
+cin => s.IN1
+cin => S2.IN1
+cin => S3.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CenasDemo|MuxComp:inst1
+enable => ~NO_FANOUT~
+input0[0] => output[0]~reg0.DATAIN
+input0[0] => output[0]~reg0.ADATA
+input0[1] => output[1]~reg0.DATAIN
+input0[1] => output[1]~reg0.ADATA
+input0[2] => output[2]~reg0.DATAIN
+input0[2] => output[2]~reg0.ADATA
+input0[3] => output[3]~reg0.DATAIN
+input0[3] => output[3]~reg0.ADATA
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sub => output[0]~reg0.ALOAD
+sub => output[1]~reg0.ALOAD
+sub => output[2]~reg0.ALOAD
+sub => output[3]~reg0.ALOAD
+sub => output[0]~reg0.CLK
+sub => output[1]~reg0.CLK
+sub => output[2]~reg0.CLK
+sub => output[3]~reg0.CLK
+
+
